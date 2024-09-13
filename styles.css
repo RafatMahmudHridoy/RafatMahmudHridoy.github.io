@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with the path to your image */
+    background-image: url('agri.jpg'); /* Replace with the path to your image */
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image in the header */
     color: white;
