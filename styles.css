@@ -5,8 +5,14 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-image: url("C:\Users\rafat\Downloads\pa agri.jpg"); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image in the header */
     color: white;
+    padding: 1em 0;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white; 
     padding: 1em 0;
     text-align: center;
 }
