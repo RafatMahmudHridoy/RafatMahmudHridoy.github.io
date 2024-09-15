@@ -127,3 +127,15 @@ footer {
 .team-member a:hover {
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    .team-member {
+        width: 45%; /* Reduce width for smaller screens, two members per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: 100%; /* Full-width for very small screens */
+    }
+}
+
