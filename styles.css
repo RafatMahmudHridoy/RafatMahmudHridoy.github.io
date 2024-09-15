@@ -90,15 +90,21 @@ footer {
     color: white;
 }
 
-/* Center-align and color titles */
-h2, h3 {
-    text-align: center;  /* Centers all h2 and h3 headings */
-    color: #0000FF;      /* Sets the color to blue */
+/* Target specific main headings by ID */
+#OurResearch, #MotiveObjective, #TeamMembers h2 {
+    text-align: center;
+    color: #0000FF; /* Blue color */
 }
 
-/* Optional: Center-align paragraphs */
+/* Subheadings (Goal, Objectives, and Team Member Names) will keep default color */
+h3, .team-member h3 {
+    text-align: center;
+    color: black; /* Default color for subheadings and team member names */
+}
+
+/* Center-align paragraphs if needed */
 p {
-    text-align: center; /* If you also want to center the paragraphs under each heading */
+    text-align: center;
 }
 
 /* New styles for the Team Members section */
