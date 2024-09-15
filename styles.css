@@ -90,6 +90,17 @@ footer {
     color: white;
 }
 
+/* Center-align and color titles */
+h2, h3 {
+    text-align: center;  /* Centers all h2 and h3 headings */
+    color: #0000FF;      /* Sets the color to blue */
+}
+
+/* Optional: Center-align paragraphs */
+p {
+    text-align: center; /* If you also want to center the paragraphs under each heading */
+}
+
 /* New styles for the Team Members section */
 .team-container {
     display: flex;
