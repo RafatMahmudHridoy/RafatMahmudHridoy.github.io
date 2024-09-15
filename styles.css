@@ -90,20 +90,24 @@ footer {
     color: white;
 }
 
-/* Target specific main headings by ID */
-#OurResearch, #MotiveObjective, #TeamMembers h2 {
+/* Center-align main headings */
+#OurResearch h2, #MotiveObjective h2, #TeamMembers h2 {
     text-align: center;
-    color: #0000FF; /* Blue color */
 }
 
-/* Subheadings (Goal, Objectives, and Team Member Names) will keep default color */
-h3, .team-member h3 {
+/* Center-align paragraphs and bullet points */
+#MotiveObjective p, #MotiveObjective ul {
     text-align: center;
-    color: black; /* Default color for subheadings and team member names */
+    list-style-position: inside; /* Centers the bullet points inside the list */
 }
 
-/* Center-align paragraphs if needed */
-p {
+/* Ensure h3 subheadings like "Goal" and "Objectives" stay left-aligned */
+#MotiveObjective h3 {
+    text-align: left;
+}
+
+/* Optional: Center-align paragraphs under Team Members if needed */
+#TeamMembers p {
     text-align: center;
 }
 
