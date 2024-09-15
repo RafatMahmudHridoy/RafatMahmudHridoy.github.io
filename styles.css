@@ -90,15 +90,26 @@ footer {
     color: white;
 }
 
-/* Center-align main headings */
+/* Style for section boxes */
+section {
+    border: 2px solid #ccc; /* Adds a light border around each section */
+    padding: 20px;          /* Adds spacing inside the section */
+    margin: 20px 0;         /* Adds space between sections */
+    border-radius: 8px;     /* Rounds the corners of the box */
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+    background-color: #f9f9f9; /* Light background color to make sections stand out */
+}
+
+/* Center-align the main headings */
 #OurResearch h2, #MotiveObjective h2, #TeamMembers h2 {
     text-align: center;
+    color: #0000FF;
 }
 
 /* Center-align paragraphs and bullet points */
 #MotiveObjective p, #MotiveObjective ul {
     text-align: center;
-    list-style-position: inside; /* Centers the bullet points inside the list */
+    list-style-position: inside; /* Center bullet points */
 }
 
 /* Ensure h3 subheadings like "Goal" and "Objectives" stay left-aligned */
