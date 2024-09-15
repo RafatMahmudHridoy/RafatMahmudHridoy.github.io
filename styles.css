@@ -44,3 +44,86 @@ footer {
     background-color: #333;
     color: white;
 }
+/* Existing styles remain the same */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+}
+
+/* New styles for the Team Members section */
+.team-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap to the next line if needed */
+    justify-content: space-around; /* Ensures space between items */
+    margin-top: 20px;
+}
+
+.team-member {
+    width: 30%; /* Each member will take up 30% of the container width */
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1); /* Light shadow effect for a card appearance */
+    text-align: center;
+    margin-bottom: 20px; /* Spacing between the rows of team members */
+}
+
+.team-member h3 {
+    margin-top: 0; /* Removes top margin */
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #555; /* Slightly muted color for the bios */
+}
+
+.team-member a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4CAF50; /* Match the header green color */
+    text-decoration: none;
+}
+
+.team-member a:hover {
+    text-decoration: underline;
+}
