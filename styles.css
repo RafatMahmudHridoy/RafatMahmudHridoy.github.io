@@ -129,6 +129,14 @@ footer {
     margin-top: 40px;
 }
 
+/* Force alignment of title and text content within the remaining space */
+.section-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    vertical-align: middle;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
