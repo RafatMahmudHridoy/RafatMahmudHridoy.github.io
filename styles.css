@@ -89,13 +89,14 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
-    justify-content: center; /* Center align image and text horizontally */
+    justify-content: space-between; /* Ensure the space between image and text */
+    gap: 20px; /* Adds space between image and text */
 }
 
 .section-with-image img.section-image {
     max-width: 40%; /* Controls image size */
     height: auto;
-    margin-right: 20px; /* Adds space between image and text */
+    margin-right: 20px;
     border-radius: 10px;
 }
 
@@ -104,7 +105,8 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Aligns the text vertically in the middle */
-    text-align: left;
+    align-items: flex-start; /* Makes sure content starts at the left but is centered vertically */
+    text-align: left; /* Aligns text inside the content section */
 }
 
 .section-content h2 {
@@ -112,6 +114,7 @@ nav ul li a:hover {
     color: #0073e6;
     margin-bottom: 15px;
 }
+
 
 .skills-list, .work-entry ul, .awards ul, .languages ul, .certifications ul, .projects ul, .publications ol {
     list-style-type: none;
