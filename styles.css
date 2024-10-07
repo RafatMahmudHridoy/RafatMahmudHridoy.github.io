@@ -73,7 +73,6 @@ nav ul li a:hover {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     max-width: 95%;
     margin: 20px auto;
     gap: 10px;
@@ -82,20 +81,19 @@ nav ul li a:hover {
 
 .section-with-image {
     display: flex;
-    align-items: center; /* Vertically aligns the text content */
+    align-items: center; /* Aligns image and text vertically */
     background: white;
     padding: 20px;
-    flex-direction: row; /* Ensures image and content align horizontally */
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid #0073e6;
     margin-bottom: 20px;
+    border-left: 4px solid #0073e6;
     transition: all 0.3s ease-in-out;
 }
 
 .section-with-image img {
-    width: 35%; /* Adjust image size to balance with text */
-    margin-right: 20px; /* Adds space between the image and the content */
+    width: 35%;
+    margin-right: 20px;
     border-radius: 8px;
 }
 
@@ -103,14 +101,8 @@ nav ul li a:hover {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Ensures text content is vertically centered */
+    justify-content: center; /* Vertically center the text */
     text-align: left;
-}
-
-
-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 section h2 {
@@ -161,27 +153,19 @@ footer {
     }
 
     .section-with-image {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .section-with-image img {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .section-content {
-        width: 100%;
-    }
-
-    section {
         padding: 15px;
         margin: 5px;
         max-width: 95%;
         flex: 1 1 100%;
     }
 
-    section h2 {
-        font-size: 22px;
+    .section-content {
+        flex: 1;
+        text-align: center;
+    }
+
+    .section-with-image img {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
