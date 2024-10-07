@@ -70,44 +70,58 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Sections with Images */
+/* Container for all sections */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 0 5px;
+    gap: 20px; /* Gap between sections */
+}
+
+/* Section with image */
 .section-with-image {
+    background: white;
     display: flex;
     align-items: center;
-    background: white;
     padding: 20px;
-    max-width: 90%;
-    margin: 40px auto;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    gap: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .section-with-image img.section-image {
-    width: 200px;
+    max-width: 40%; /* Controls image size */
     height: auto;
+    margin-right: 20px; /* Adds space between image and text */
     border-radius: 10px;
 }
 
 .section-content {
-    flex: 1;
+    flex: 1; /* Ensures the content takes up remaining space */
+    text-align: center; /* Centers the text in the block */
 }
 
 .section-content h2 {
+    font-size: 24px;
     color: #0073e6;
     margin-bottom: 15px;
 }
 
-section {
-    transition: all 0.3s ease-in-out;
+.section-content p, .section-content ul, .section-content ol {
+    text-align: left; /* Align text inside the content to left */
 }
 
-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+.skills-list, .work-entry ul, .awards ul, .languages ul, .certifications ul, .projects ul, .publications ol {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Footer */
+.skills-list li, .work-entry ul li, .projects ul li, .certifications ul li, .awards ul li, .languages ul li, .publications ol li {
+    margin-bottom: 5px;
+}
+
 footer {
     text-align: center;
     padding: 15px;
@@ -116,16 +130,33 @@ footer {
     margin-top: 40px;
 }
 
-/* Responsive Styles */
+/* Responsive adjustments */
 @media (max-width: 768px) {
+    .container {
+        margin: 10px;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
     .section-with-image {
         flex-direction: column;
         text-align: center;
     }
 
     .section-with-image img.section-image {
-        width: 100%;
-        height: auto;
+        max-width: 80%;
+        margin: 0 auto 20px auto;
     }
 
     .section-content {
