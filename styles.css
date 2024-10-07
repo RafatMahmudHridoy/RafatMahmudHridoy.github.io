@@ -81,7 +81,7 @@ nav ul li a:hover {
 
 .section-with-image {
     display: flex;
-    align-items: center; /* Aligns image and text vertically */
+    align-items: center;
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -101,7 +101,7 @@ nav ul li a:hover {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically center the text */
+    justify-content: center;
     text-align: left;
 }
 
