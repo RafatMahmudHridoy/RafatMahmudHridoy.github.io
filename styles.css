@@ -57,21 +57,25 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 100%; /* Make full use of available width */
-    margin: 20px 5px; /* Minimized left and right margins */
-    gap: 10px; /* Small gap between sections */
-    padding: 0 5px; /* Reduced padding for container */
+    max-width: 100%;
+    margin: 20px 5px;
+    gap: 10px;
+    padding: 0 5px;
 }
 
 section {
     background: white;
-    padding: 15px; /* Reduced padding inside section */
-    flex: 1 1 calc(50% - 10px); /* Maximum two sections per row */
-    min-width: 320px; /* Minimum width for responsive design */
+    padding: 20px;
+    flex: 1 1 calc(50% - 10px);
+    min-width: 320px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #0073e6;
     transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center content horizontally */
 }
 
 section:hover {
@@ -80,9 +84,9 @@ section:hover {
 }
 
 section h2 {
-    font-size: 22px; /* Slightly reduced font size */
+    font-size: 24px;
     color: #0073e6;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 .education-entry, .work-entry {
@@ -91,10 +95,11 @@ section h2 {
 
 .skills-list, .work-entry ul, .awards ul, .languages ul, .certifications ul, .projects ul, .publications ol {
     list-style-type: none;
+    padding: 0;
 }
 
 .skills-list li, .work-entry ul li, .projects ul li, .certifications ul li, .awards ul li, .languages ul li, .publications ol li {
-    margin-bottom: 5px; /* Less gap between list items */
+    margin-bottom: 5px;
 }
 
 footer {
@@ -129,7 +134,7 @@ footer {
         padding: 15px;
         margin: 5px;
         max-width: 95%;
-        flex: 1 1 100%; /* Stack sections on smaller screens */
+        flex: 1 1 100%;
     }
 
     section h2 {
