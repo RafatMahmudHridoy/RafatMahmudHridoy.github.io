@@ -89,6 +89,7 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    justify-content: center; /* Center align image and text horizontally */
 }
 
 .section-with-image img.section-image {
@@ -103,8 +104,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Aligns the text vertically in the middle */
-    text-align: left; /* Aligns the text content to the left */
-    vertical-align: middle; /* Ensures the text content stays in the center next to the image */
+    text-align: left;
 }
 
 .section-content h2 {
@@ -130,12 +130,16 @@ footer {
     margin-top: 40px;
 }
 
-/* Force alignment of title and text content within the remaining space */
+/* Force alignment of text next to image */
 .section-content {
     flex-direction: column;
     justify-content: center;
     text-align: left;
     vertical-align: middle;
+}
+
+.section-with-image img.section-image {
+    align-self: center; /* Ensure image is centered vertically next to text */
 }
 
 /* Responsive adjustments */
