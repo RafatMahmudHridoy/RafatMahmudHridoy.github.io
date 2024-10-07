@@ -100,17 +100,16 @@ nav ul li a:hover {
 
 .section-content {
     flex: 1; /* Ensures the content takes up remaining space */
-    text-align: center; /* Centers the text in the block */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns the text vertically in the middle */
+    text-align: left; /* Aligns the text content to the left */
 }
 
 .section-content h2 {
     font-size: 24px;
     color: #0073e6;
     margin-bottom: 15px;
-}
-
-.section-content p, .section-content ul, .section-content ol {
-    text-align: left; /* Align text inside the content to left */
 }
 
 .skills-list, .work-entry ul, .awards ul, .languages ul, .certifications ul, .projects ul, .publications ol {
