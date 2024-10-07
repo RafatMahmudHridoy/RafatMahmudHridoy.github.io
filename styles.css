@@ -57,11 +57,11 @@ nav ul li a:hover {
 #bio {
     background: white;
     padding: 30px;
-    max-width: 100%;
-    margin: 20px auto;
+    max-width: 90%;
+    margin: 40px auto;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center;
 }
 
 #bio h2 {
@@ -74,8 +74,8 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 100%;
-    margin: 20px 5px;
+    max-width: 95%;
+    margin: 20px auto;
     gap: 10px;
     padding: 0 5px;
 }
