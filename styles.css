@@ -53,6 +53,23 @@ nav ul li a:hover {
     background-color: #0073e6;
 }
 
+/* Bio Section */
+#bio {
+    background: white;
+    padding: 30px;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#bio h2 {
+    font-size: 28px;
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -74,8 +91,8 @@ section {
     transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    text-align: center; /* Center content horizontally */
+    justify-content: center;
+    text-align: center;
 }
 
 section:hover {
