@@ -57,36 +57,36 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1000px; /* Max-width set to control the layout */
-    margin: 20px auto;
-    gap: 20px;
-    padding: 0 10px; /* Reduced padding for better alignment */
+    max-width: 100%; /* Make full use of available width */
+    margin: 20px 5px; /* Minimized left and right margins */
+    gap: 10px; /* Small gap between sections */
+    padding: 0 5px; /* Reduced padding for container */
 }
 
 section {
     background: white;
-    padding: 20px;
-    flex: 1 1 calc(50% - 20px); /* Ensures two sections per row */
-    min-width: 300px; /* Minimum width for sections to stack properly on smaller screens */
-    border-radius: 15px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #0073e6;
+    padding: 15px; /* Reduced padding inside section */
+    flex: 1 1 calc(50% - 10px); /* Maximum two sections per row */
+    min-width: 320px; /* Minimum width for responsive design */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0073e6;
     transition: all 0.3s ease-in-out;
 }
 
 section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 section h2 {
-    font-size: 24px;
+    font-size: 22px; /* Slightly reduced font size */
     color: #0073e6;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .education-entry, .work-entry {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .skills-list, .work-entry ul, .awards ul, .languages ul, .certifications ul, .projects ul, .publications ol {
@@ -94,12 +94,12 @@ section h2 {
 }
 
 .skills-list li, .work-entry ul li, .projects ul li, .certifications ul li, .awards ul li, .languages ul li, .publications ol li {
-    margin-bottom: 8px;
+    margin-bottom: 5px; /* Less gap between list items */
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background: #333;
     color: white;
     margin-top: 40px;
@@ -109,6 +109,7 @@ footer {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        margin: 10px;
     }
 
     header img {
@@ -125,13 +126,13 @@ footer {
     }
 
     section {
-        padding: 20px;
-        margin: 10px;
+        padding: 15px;
+        margin: 5px;
         max-width: 95%;
-        flex: 1 1 100%; /* Ensure sections stack on smaller screens */
+        flex: 1 1 100%; /* Stack sections on smaller screens */
     }
 
     section h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
 }
