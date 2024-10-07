@@ -10,8 +10,6 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    margin: 0;
-    padding: 0;
 }
 
 header {
@@ -33,8 +31,6 @@ nav ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 nav ul li {
@@ -51,6 +47,38 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #0073e6;
+}
+
+/* Section with image */
+.section-with-image {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    gap: 20px;
+    justify-content: space-between; /* Ensure space between image and content */
+}
+
+.section-with-image img.section-image {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ensures text is centered vertically next to image */
+}
+
+.section-content h2 {
+    font-size: 24px;
+    color: #0073e6;
+    margin-bottom: 10px;
 }
 
 /* Bio Section */
@@ -70,108 +98,15 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Container for all sections */
-.container {
-    display: flex;
-    flex-direction: column;
-    max-width: 95%;
-    margin: 20px auto;
-    padding: 0 5px;
-    gap: 20px; /* Gap between sections */
-}
-
-/* Section with image */
-.section-with-image {
-    background: white;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    justify-content: space-between; /* Ensure the space between image and text */
-    gap: 20px; /* Adds space between image and text */
-}
-
-.section-with-image img.section-image {
-    max-width: 40%; /* Controls image size */
-    height: auto;
-    margin-right: 20px;
-    border-radius: 10px;
-}
-
-.section-content {
-    flex: 1; /* Ensures the content takes up remaining space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Aligns the text vertically in the middle */
-    align-items: flex-start; /* Makes sure content starts at the left but is centered vertically */
-    text-align: left; /* Aligns text inside the content section */
-}
-
-.section-content h2 {
-    font-size: 24px;
-    color: #0073e6;
-    margin-bottom: 15px;
-}
-
-
-.skills-list, .work-entry ul, .awards ul, .languages ul, .certifications ul, .projects ul, .publications ol {
-    list-style-type: none;
-    padding: 0;
-}
-
-.skills-list li, .work-entry ul li, .projects ul li, .certifications ul li, .awards ul li, .languages ul li, .publications ol li {
-    margin-bottom: 5px;
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #333;
-    color: white;
-    margin-top: 40px;
-}
-
-/* Force alignment of text next to image */
-.section-content {
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.section-with-image img.section-image {
-    align-self: center; /* Ensure image is centered vertically next to text */
-}
-
-/* Responsive adjustments */
+/* Styling for responsiveness */
 @media (max-width: 768px) {
-    .container {
-        margin: 10px;
-    }
-
-    header img {
-        width: 120px;
-        height: 120px;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-    }
-
-    nav ul li {
-        padding: 10px;
-    }
-
     .section-with-image {
         flex-direction: column;
         text-align: center;
     }
 
     .section-with-image img.section-image {
-        max-width: 80%;
-        margin: 0 auto 20px auto;
+        width: 100%;
     }
 
     .section-content {
