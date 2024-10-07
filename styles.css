@@ -70,39 +70,41 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Section with Image Styling */
+/* Sections with Images */
 .section-with-image {
     display: flex;
     align-items: center;
     background: white;
-    padding: 30px;
+    padding: 20px;
     max-width: 90%;
-    margin: 20px auto;
+    margin: 40px auto;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    gap: 20px;
 }
 
-.section-with-image .section-image {
-    width: 30%;
+.section-with-image img.section-image {
+    width: 200px;
     height: auto;
     border-radius: 10px;
-    margin-right: 20px;
 }
 
-.section-with-image .section-content {
+.section-content {
     flex: 1;
-    text-align: left;
 }
 
-.section-with-image h2 {
+.section-content h2 {
     color: #0073e6;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+section {
+    transition: all 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* Footer */
@@ -121,12 +123,12 @@ footer {
         text-align: center;
     }
 
-    .section-with-image .section-image {
+    .section-with-image img.section-image {
         width: 100%;
-        margin: 0 0 20px;
+        height: auto;
     }
 
-    .section-with-image .section-content {
+    .section-content {
         text-align: center;
     }
 }
