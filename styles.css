@@ -104,6 +104,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center; /* Aligns the text vertically in the middle */
     text-align: left; /* Aligns the text content to the left */
+    vertical-align: middle; /* Ensures the text content stays in the center next to the image */
 }
 
 .section-content h2 {
